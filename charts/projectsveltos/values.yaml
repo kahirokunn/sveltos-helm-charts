@@ -1,4 +1,4 @@
-global:  
+global:
   imagePullSecrets: []
  #   - name: my-registry-secret
 accessManager:
@@ -173,6 +173,7 @@ hcManager:
   tolerations: []
 kubernetesClusterDomain: cluster.local
 registerMgmtClusterJob:
+  enabled: true
   backoffLimit: 4
   registerMgmtCluster:
     args:
